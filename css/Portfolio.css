@@ -1,0 +1,141 @@
+:root{
+    --fc-pri: #fff;
+    --fc-accent: #f1c27d;
+    /* 241, 194, 125 */
+    --fc-dark: #111;
+    --fc-brown : #555555;
+    --fc-acc-light :#ffdbac;
+    --fc-dark-pri: #eee;
+    /* #7cc576; */
+    
+    }
+    .port{
+        position: relative;
+    }
+    .overlay-image{
+        background: url("../images/parallax.png")  repeat;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+      }
+    .card{
+       
+        padding: 20px;
+        max-width: 800px;
+        width: fit-content;
+        height: fit-content;
+        min-height: 300px;
+        margin: 20px auto;
+       display: block;
+        /* opacity: .6; */
+        background: linear-gradient(rgba(255,255,255,.15),rgba(255,255,255,.15));
+        position: relative;
+        border-radius: 5px;
+        /* float: left; */
+    }
+    .card .pic{
+        padding:10px 0 10px 0;
+        vertical-align: center;
+       
+        position: absolute;
+        left: -50px;
+        /* transform: translateX(60px); */
+        text-align: center;
+        z-index: 1;
+       
+        
+    }
+ 
+    .card .pic img{
+        max-width: 400px;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .product-info{
+        padding-left:20%;
+    }
+    .card .pic h4{
+        padding-top: 10px;
+    }
+    .card .pic a{
+        padding:10px;
+    }
+
+    /* .overlay-black{
+        opacity: .5;
+        background: var(--fc-dark);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+    } */
+    .port{
+        background: linear-gradient(rgba(1,1,1,.4),rgba(1,1,1,.4)), url("../images/background.jpg") no-repeat fixed;
+        position: relative;
+    }
+    .port .section-title{
+        padding: 30px 0 30px 0 !important;
+    }
+
+    @media (min-width:575px) and (max-width:991px){
+        .card{
+            margin-left: 100px;
+            margin-right: 20px;
+        }
+        .card .pic {
+            padding: 20px 0 20px 0;
+            position: absolute;
+            left: -50px;
+            transform: translateX(-40%);
+            text-align: center;
+            z-index: 1;
+        }
+        .card .pic img {
+            max-width: 400px;
+            width: 200px;
+            transition: translateX(60px);
+            border-radius: 20px;
+        }
+
+    }
+    @media (max-width:575px) {
+        .card{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .card .pic {
+            display: contents;
+            padding: 20px 0 20px 100px;
+            position: absolute;
+            left: 0px;
+            transform: translateY(9%);
+            text-align: center;
+            z-index: 1;
+        }
+        .card .pic img {
+            max-width: 400px;
+            width: 150px;
+            display: block;
+            margin: 0 auto;
+            transition: translateX(600px);
+            border-radius: 20px;
+        }
+        .product-info{
+            padding:0;
+            
+        }
+        .card .pic a{
+            margin: 0 auto;
+            display: block;
+        }
+        
+
+    }
+
+   

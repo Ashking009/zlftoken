@@ -1,0 +1,139 @@
+:root{
+  --fc-pri: #fff;
+  --fc-accent: #f1c27d;
+  /* 241, 194, 125 */
+  --fc-dark: #111;
+  --fc-brown : #555555;
+  --fc-acc-light :#ffdbac;
+  --fc-dark-pri: #eee;
+  /* #7cc576; */
+  }
+  .overlay-image{
+    background: url("../images/parallax.png")  repeat;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+.events{
+  background: linear-gradient(rgba(1,1,1,.4),rgba(1,1,1,.4)), url("../images/background.jpg") no-repeat fixed;
+  background-size: cover;
+  position: relative;
+}
+body{
+  background: transparent;
+}
+
+section{
+  padding-top: 0px;
+}
+.section-title{
+  padding-bottom: 0;
+}
+h1{
+  text-transform: uppercase;
+  font-size:40px;
+  font-weight: bold;
+  padding: 30px 0;
+  padding-top: 110px;
+  margin: 0;
+}
+
+.image-container{
+  min-height:200px;
+  /* background-image: url('../images/function.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+/*.events .content h2 {
+    font-weight: 600;
+    font-size: 26px;
+  }*/
+  
+  .events .section-title .catchy-line-in-events{
+    font-family: 'Parisienne', cursive;
+    font-size:25px ;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .events .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .events .content ul li {
+    padding-left: 28px;
+    position: relative;
+    display: inline-block;
+  }
+  .back-img{
+      background-image: url('../images/function.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+.size-vid{
+  min-width: 360px;
+  opacity: .8;
+}
+  .events .content ul li a{
+      color: var(--fc-accent);
+  }
+  
+  .events .content ul li + li {
+    margin-top: 10px;
+  }
+
+  @media(min-width:240px)
+  {
+    .size-vid{
+      width:144px;
+    }
+   
+  }
+  @media(min-width:400px)
+  {
+    .size-vid{
+      width:320px;
+    }
+   
+  }
+  @media(min-width:575px)
+  {
+    .size-vid{
+      width:360px;
+    }
+   
+  }
+  @media(min-width:768px)
+  {
+    .size-vid{
+      width:480px;
+    }
+   
+  }
+  @media(min-width:991px)
+  {
+    .size-vid{
+      width:720px;
+    }
+   
+  }
+  @media(min-width:1200px)
+  {
+    .size-vid{
+      width:800px;
+    }
+   
+  }
+  @media (max-width:575px) and (min-width:50px)
+{
+  .section-title h1{
+    font-size: 32px !important;
+  }
+}

@@ -1,0 +1,239 @@
+:root{
+  --fc-pri: #fff;
+  --fc-accent: #f1c27d;
+  /* 241, 194, 125 */
+  --fc-dark: #111;
+  --fc-brown : #555555;
+  --fc-acc-light :#ffdbac;
+  --fc-dark-pri: #eee;
+  /* #7cc576; */
+  
+  }
+body{
+  background:none;
+}
+.portfolio .content ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .portfolio .content ul li {
+    padding-left: 10px;
+    position: relative;
+  }
+  
+  .portfolio .content ul li + li {
+    margin-top: 2px;
+  }
+  
+  .portfolio .content ul i::before {
+    content: "•"; color: rgb(8, 8, 8);
+    display: inline-block; width: 1em;
+    /*margin-left: -1em;*/
+    position: absolute;
+    left: 0;
+    top: 2px;
+    right:0;
+    line-height: 1;
+    font-size: 20px;
+  }
+
+  .portfolio .content .catchy-line{
+    font-family: 'Parisienne', cursive;
+    font-size:25px ;
+    font-weight: bold;
+  }
+
+  .portfolio .content p{
+    margin-bottom: 0.1rem;
+  }
+ /* .portfolio .content ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #3498db;
+    line-height: 1;
+  }*/
+  
+  .portfolio .content p:last-child {
+    margin-bottom: 0;
+  }
+  h2{
+   text-align: center;
+  }
+
+  
+  .catchy-line-in-portfolio{
+    font-family: 'Parisienne', cursive;
+    font-size:30px ;
+    font-weight: bold;
+  }
+  /*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio{
+  background: none !important;
+}
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+.links{
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-radius: 50px;
+  border: 2px solid #3498db;
+}
+.portfolio #portfolio-flters {
+  padding-bottom: 15px;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+.portfolio #portfolio-flters a {
+  color:#000;
+  display: inline-block;
+}
+.portfolio #portfolio-flters a:hover {
+  color:#fff;
+  background:#3498db;
+}
+
+/* .portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+} */
+/* 
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: #3498db; */
+/* } */
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background:var(--fc-dark);
+  margin: 0 auto;
+} 
+ .portfolio .portfolio-wrap::before {
+  content: "";
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 57%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--fc-pri);
+  /* margin: 0 auto; */
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: flex-end;*/
+  /*align-items: flex-start;*/
+  padding: 50px;
+  /* overflow: hidden; */
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.portfolio img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 ;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  margin: 0 auto;
+  font-size: 60px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #3498db;
+}
+.portfolio .portfolio-wrap:hover img{
+  transform: scale(1.4);
+}
+.portfolio .portfolio-wrap:hover::before {
+  opacity: .5;
+}
+
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+h2{
+  font-weight: bold;
+  padding:10px;
+}
+
+/*added to over-write in built css background*/
+body{
+  background: var(--fc-dark);
+}
+
+.portfolio #Zillion .row.content{
+  margin-bottom: 15px;
+}
+@media (max-width:575px) and (min-width:50px)
+{
+  .section-title h1{
+    font-size: 32px !important;
+  }
+}
